@@ -5,3 +5,4 @@ Daniel;0
 Daniel;0
 Daniel;800
 Daniel;0
+Daniel;0

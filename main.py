@@ -34,9 +34,13 @@ while True:
             if not dados:
                 print('Score Vazio')
             else:
-                i = 1
+                ranking = []
                 for jogador in dados:
-                    jogador = jogador.strip().split(';')
+                    nome, pontuacao = jogador.strip().split(';')
+                    ranking.append([nome, int(pontuacao)])
+                ranking.sort(key=lambda jogador: jogador[1], reverse=True)
+                i = 1
+                for jogador in ranking:
                     print(f'{i} -> {jogador[0]}, pontuação: {jogador[1]}')
                     i += 1
         case 3:
