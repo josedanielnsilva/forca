@@ -32,8 +32,8 @@ def jogar():
             break
         #Tentativas
         tentativa = input('\nDigite uma letra: ').lower().strip()
-        if len(tentativa)>1:
-            print('Digite uma letra por vez')
+        if len(tentativa) != 1 or not tentativa.isalpha():
+            print('Digite apenas uma letra.')
             continue
         else:
             if tentativa in digitadas:
