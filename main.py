@@ -21,9 +21,9 @@ while True:
     mostrar_menu()
     try:
         opcao = int(input('Escolha a opção (1|2|3): '))
-        continue
     except ValueError:
-              print('Digite uma opção numérica de 1 a 3 ')
+        print('Digite uma opção numérica de 1 a 3 ')
+        continue
     match opcao:
         case 1:
             print('Iniciar jogo')
